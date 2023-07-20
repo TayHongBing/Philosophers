@@ -55,3 +55,7 @@ int	p_error(char *str, t_data *data);
 int	init(t_data *data, char **argv, int argc);
 int	one_philo(t_data *data);
 unsigned int	get_time(void);
+int	init_thread(t_data *data);
+void	eat(t_philo *philo);
+void	message(char *str, t_philo *philo);
+int	ft_sleep(useconds_t time);
