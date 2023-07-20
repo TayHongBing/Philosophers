@@ -41,7 +41,7 @@ typedef struct s_philo
 	struct s_data	*data;
 	pthread_t		t1;
 	int				id;
-	int				eat_cont;
+	int				eat_cnt;
 	int				status;
 	int				eating;
 	unsigned int	t2d;
@@ -52,3 +52,6 @@ typedef struct s_philo
 
 int	check_input(char **argv);
 int	p_error(char *str, t_data *data);
+int	init(t_data *data, char **argv, int argc);
+int	one_philo(t_data *data);
+unsigned int	get_time(void);
